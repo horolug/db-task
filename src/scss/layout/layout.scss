@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body{
+  font-size: $base-rem;
+}
+
+body {
+  margin: 0;
+  font-family: $base-font;
+  background: $body-background;
+  color: $paragraph-color;
+}
+
+p{
+  line-height: 1.3rem;
+}
+
+.grid-container{
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 0 $base-padding;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: $base-padding*2 0 $base-padding 0;
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content{
+    flex-grow: 2.5;
+    flex-basis: 0;
+  }
+
+  .aside{
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: $base-margin;
+  }
+
+  .related{
+    display: flex;
+    padding-bottom: $base-padding;
+  }
+}
+
+h3{
+  color: red;
+}

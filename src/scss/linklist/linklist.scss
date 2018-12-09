@@ -1,0 +1,12 @@
+.linklist{
+  list-style-type:  none;
+}
+
+.linklist__item{
+  display: inline-block;
+  margin-right: $base-margin;
+}
+
+.linklist__item:last-child{
+  margin-right: 0;
+}

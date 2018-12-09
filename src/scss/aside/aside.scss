@@ -1,0 +1,47 @@
+.aside{
+  text-align: left;
+  padding-bottom: $base-padding;
+
+  &__article{
+    padding-bottom: $base-padding*2;
+  }
+
+  &__title{
+    margin: 0;
+    font-family: $article-font;
+    font-size: $standard-title;
+    color: $title-color;
+
+    &:after{
+      content: "";
+      display: block;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid black;
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+  .aside{
+    padding: $base-padding 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .aside{
+    display: flex;
+    justify-content: center;
+
+    &__article{
+      padding-right: $base-padding;
+      flex: 1;
+    }
+  }
+
+  .form{
+    flex: 1;
+  }
+}

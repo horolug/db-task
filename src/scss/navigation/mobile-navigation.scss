@@ -1,0 +1,68 @@
+@media (max-width: $breakpoint-tablet) {
+
+  .navigation{
+    display: none;
+  }
+
+  .menu-button{
+    background: 0 none;
+    border: 0 none;
+    color: $white-color;
+    font-size: 36px;
+  }
+
+  body.navigation_open {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body.navigation_open .navigation{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: $navigation-background;
+    left: 0;
+    text-align: left;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y:  scroll;
+    padding: 2rem;
+  }
+
+  .navigation_open .close-button{
+    display: block;
+    position: fixed;
+    z-index: 5;
+    right: $base-padding;
+    width: 40px;
+    height: 40px;
+    background: 0 none;
+    border: 0 none;
+    color: white;
+    font-size: 36px;
+  }
+
+  .navigation li{
+    display: block;
+    margin-right: 0;
+  }
+
+  .navigation li a {
+    font-size: 14px;
+    color: white;
+    height: 40px;
+    display: block;
+    border-bottom: 1px dashed grey;
+    line-height: 14px;
+    padding: 12px;
+  }
+
+  .navigation li .sub-menu a{
+    padding-left: 40px;
+  }
+
+  .menu__link_large{
+    font-weight: bold;
+  }
+}
