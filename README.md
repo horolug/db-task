@@ -3,7 +3,7 @@
 Live demo can be seen here: https://horolug.github.io/db-task/
 
 ### Layout
-* Menu Dropdown on desktop has unset witdh to cater for different link text length
+* Menu Dropdown on desktop has unset width to cater for different link text length
 * Dropdown for last menu item is intentionally not centered to handle small desktop screens
 
 ### User interactions
@@ -23,10 +23,12 @@ Live demo can be seen here: https://horolug.github.io/db-task/
 * open ``` index.html``` in your browser 
 
 ## To run the build on local machine
-* Prerequisites
-** Ruby https://www.ruby-lang.org/en/downloads/
-** Sass https://sass-lang.com/install
-** Grunt CLI https://gruntjs.com/using-the-cli
+### Prerequisites
+* Ruby https://www.ruby-lang.org/en/downloads/
+* Sass https://sass-lang.com/install
+* Grunt CLI https://gruntjs.com/using-the-cli
+
+## Steps to run the code
 * Clone the repositoty ```https://github.com/horolug/db-task.git ```
 * Navigate into project directory using terminal and run  ``` npm install ```
 * Run ``` grunt  ```
