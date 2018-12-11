@@ -3,8 +3,8 @@
 Live demo can be seen here: https://horolug.github.io/db-task/
 
 ### Layout
-* Menu Dropdown on desktop has unset witdh to cater for different link text
-* Dropdown for last menu item is intentionally not centered to handle screens with low resolution 
+* Menu Dropdown on desktop has unset witdh to cater for different link text length
+* Dropdown for last menu item is intentionally not centered to handle small desktop screens
 
 ### User interactions
 * Form validation is done only on form submit
@@ -13,17 +13,21 @@ Live demo can be seen here: https://horolug.github.io/db-task/
 * Form error handling and click handling for mobile menu are done using jQuery 
 
 ### Workflow decisions 
-* SASS .scss is used to genereate the stylesheet
+* Sass .SCSS is used to genereate the stylesheet
 * grunt.js is used to compile scss to css 
 * .js and .css are not minified 
 
 ## To view the static page on local machine: 
-* clone the repositoty ```https://github.com/horolug/db-task.git  ```
-* Cd into project directory
+* Clone the repositoty ```https://github.com/horolug/db-task.git ```
+* Navigate into project directory
 * open ``` index.html``` in your browser 
 
-## To run the build on local machine you will need to have Ruby, Sass, Grunt CLI
-* clone the repositoty ```https://github.com/horolug/db-task.git  ```
-* Cd into project directory and run  ``` npm install  ```
+## To run the build on local machine
+* Prerequisites
+** Ruby https://www.ruby-lang.org/en/downloads/
+** Sass https://sass-lang.com/install
+** Grunt CLI https://gruntjs.com/using-the-cli
+* Clone the repositoty ```https://github.com/horolug/db-task.git ```
+* Navigate into project directory using terminal and run  ``` npm install ```
 * Run ``` grunt  ```
-* open ``` index.html``` in your browser 
+* open ``` index.html ``` in your browser 
