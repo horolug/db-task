@@ -13,7 +13,8 @@ p:last-child {
   margin-bottom: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #0071bc; }
 
 .article {
   text-align: left;
@@ -156,7 +157,8 @@ footer {
   padding: .5rem 2rem;
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  border: 0 none; }
 
 .form__error label, .form__error p {
   color: red; }
@@ -219,9 +221,6 @@ main {
   .related {
     display: flex;
     padding-bottom: 1.4rem; } }
-h3 {
-  color: red; }
-
 .header {
   background: #d3135a;
   padding: 1.4rem 0; }
