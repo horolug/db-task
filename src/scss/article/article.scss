@@ -20,10 +20,6 @@
 
   &__title{
     font-size: $standard-title;
-
-    &_main{
-      font-size: $large-title;
-    }
   }
 
   &__title, &__title_main{
@@ -51,23 +47,41 @@ li:last-child .article__listlink{
 }
 
 @media (max-width: $breakpoint-tablet) {
-  .article_secondary{
-    margin-bottom: $base-padding;
+
+  .article{
+    &__title{
+      &_main{
+        font-size: $large-title-mobile;
+      }
+    }
+
+    &_secondary{
+      margin-bottom: $base-padding;
+    }
   }
 }
 
 @media (min-width: $breakpoint-tablet) {
 
-  .article_secondary{
-    flex-basis: 0;
-    flex-grow: 1;
+  .article{
+    &__title{
+      &_main{
+        font-size: $large-title;
+      }
+    }
+
+    &_secondary{
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    &_tretiary{
+      columns: 3;
+    }
   }
 
   .article_secondary + .article_secondary{
     margin-left: $base-margin;
   }
 
-  .article_tretiary{
-    columns: 3;
-  }
 }

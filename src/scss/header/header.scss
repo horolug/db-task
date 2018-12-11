@@ -3,15 +3,8 @@
   padding: $base-padding 0;
 
   &__logo{
-    padding-top: 37px;
-    font-size: $logo-header;
-    line-height: $logo-header * 0.8;
     color: #ffc2dd;
-  }
-
-  &__linklist{
-    display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
   }
 
   &__link{
@@ -26,12 +19,18 @@
 
 .logo{
   text-decoration: none;
-  align-self: flex-end;
   white-space: nowrap;
   font-weight: bold;
 }
 
 @media (max-width: $breakpoint-tablet) {
+
+  .header{
+    &__logo{
+      font-size: $logo-header-mobile;
+    }
+  }
+
   .header__link{
     height: 40px;
     line-height: 40px;
@@ -39,5 +38,21 @@
 
   .header__linklist .linklist__item{
     display: block;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+  .header{
+
+    &__logo{
+      padding-top: 37px;
+      font-size: $logo-header;
+      line-height: $logo-header * 0.8;
+    }
+    &__linklist{
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }

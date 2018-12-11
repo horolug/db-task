@@ -28,8 +28,6 @@ a {
     background: #ccc; }
   .article__title {
     font-size: 1.7rem; }
-    .article__title_main {
-      font-size: 2.7rem; }
   .article__title, .article__title_main {
     font-family: TimesNewRoman, "Times New Roman", Times, serif;
     margin-top: 0;
@@ -48,18 +46,21 @@ li:last-child .article__listlink {
   border-bottom: 0 none; }
 
 @media (max-width: 800px) {
+  .article__title_main {
+    font-size: 2.2rem; }
   .article_secondary {
     margin-bottom: 1.4rem; } }
 @media (min-width: 800px) {
+  .article__title_main {
+    font-size: 2.7rem; }
   .article_secondary {
     flex-basis: 0;
     flex-grow: 1; }
+  .article_tretiary {
+    columns: 3; }
 
   .article_secondary + .article_secondary {
-    margin-left: 1.4rem; }
-
-  .article_tretiary {
-    columns: 3; } }
+    margin-left: 1.4rem; } }
 .aside {
   text-align: left;
   padding-bottom: 1.4rem; }
@@ -114,7 +115,12 @@ footer {
   display: inline-block; }
 
 @media (max-width: 800px) {
+  .footer_info {
+    align-items: center; }
+  .footer__linklist {
+    text-align: center; }
   .footer__link {
+    display: block;
     padding: 0.7rem 0; } }
 @media (min-width: 800px) {
   .footer__link {
@@ -220,13 +226,8 @@ h3 {
   background: #d3135a;
   padding: 1.4rem 0; }
   .header__logo {
-    padding-top: 37px;
-    font-size: 4.2rem;
-    line-height: 3.36rem;
-    color: #ffc2dd; }
-  .header__linklist {
-    display: flex;
-    justify-content: flex-end; }
+    color: #ffc2dd;
+    align-self: flex-end; }
   .header__link {
     color: #000;
     text-decoration: none; }
@@ -235,17 +236,27 @@ h3 {
 
 .logo {
   text-decoration: none;
-  align-self: flex-end;
   white-space: nowrap;
   font-weight: bold; }
 
 @media (max-width: 800px) {
+  .header__logo {
+    font-size: 3.6rem; }
+
   .header__link {
     height: 40px;
     line-height: 40px; }
 
   .header__linklist .linklist__item {
     display: block; } }
+@media (min-width: 800px) {
+  .header__logo {
+    padding-top: 37px;
+    font-size: 4.2rem;
+    line-height: 3.36rem; }
+  .header__linklist {
+    display: flex;
+    justify-content: flex-end; } }
 .linklist {
   list-style-type: none; }
 

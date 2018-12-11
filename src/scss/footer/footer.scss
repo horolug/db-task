@@ -34,8 +34,20 @@ footer{
 }
 
 @media (max-width: $breakpoint-tablet) {
-  .footer__link{
-    padding: 0.7rem 0;
+
+  .footer{
+
+    &_info{
+      align-items: center;
+    }
+    &__linklist{
+      text-align: center;
+    }
+
+    &__link{
+      display: block;
+      padding: 0.7rem 0;
+    }
   }
 }
 
