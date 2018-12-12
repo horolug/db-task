@@ -28,7 +28,7 @@ Live demo can be seen here: https://horolug.github.io/db-task/
 * Sass https://sass-lang.com/install
 * Grunt CLI https://gruntjs.com/using-the-cli
 
-## Steps to run the code
+### Steps to run the code
 * Clone the repositoty ```https://github.com/horolug/db-task.git ```
 * Navigate into project directory using terminal and run  ``` npm install ```
 * Run ``` grunt  ```
